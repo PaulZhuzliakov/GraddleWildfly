@@ -1,0 +1,33 @@
+plugins {
+    id 'java-library'
+    id 'java'
+    id 'war'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+repositories {
+    maven { url 'https://repository.jboss.org/nexus/content/groups/public-jboss' }
+    maven { url 'https://repository.jboss.org/nexus/content/repositories' }
+    maven { url 'https://repository.jboss.org/nexus/content/repositories/thirdparty-releases' }
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'org.wildfly:wildfly-spec-api:16.0.0.Final'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+war {
+    from 'src/webapp' // adds a file-set to the root of the archive
+}
