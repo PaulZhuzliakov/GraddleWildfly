@@ -31,3 +31,7 @@ dependencies {
 war {
     from 'src/webapp' // adds a file-set to the root of the archive
 }
+
+compileJava {
+    options.encoding = "UTF-8"
+}
