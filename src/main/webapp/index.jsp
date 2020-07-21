@@ -11,9 +11,7 @@
     <title>WebDemo</title>
 </head>
 <body>
-<p>Greeting</p>
-
-
+<%--<p>Greeting</p>
 
 <!-- приветствие по введеному имени -->
 <form method="post" action="hello">
@@ -26,7 +24,7 @@
 <!-- кнопка вывода текущей даты -->
 <form action="${pageContext.request.contextPath}/time" method="post">
     <input type="submit" name="timeButton" value="What day and time is it" />
-</form>
+</form>--%>
 
 <!-- расчет кредита -->
 <form method="post" action="mortgage">
@@ -40,15 +38,15 @@
     <input type="submit" id="submit-button" value="Calculate"/>
 </form>
 
-<%--<!-- тест -->--%>
-<%--<form method="post" action="test">--%>
-<%--    <h2>Умножение двух чисел:</h2>--%>
-<%--    Введите спервое число--%>
-<%--    <input type="text" id="first" name="first"/> <br>--%>
-<%--    Введите второе число--%>
-<%--    <input type="text" id="second" name="second"/> <br>--%>
-<%--    <input type="submit" id="submitTest-button" value="CalculateTest"/>--%>
-<%--</form>--%>
+<!-- тест -->
+<!--<form method="post" action="test">
+    <h2>Умножение двух чисел:</h2>
+    Введите спервое число
+    <input type="text" id="first" name="first"/> <br>
+    Введите второе число
+    <input type="text" id="second" name="second"/> <br>
+    <input type="submit" id="submitTest-button" value="CalculateTest"/>
+</form>-->
 
 
 </body>
